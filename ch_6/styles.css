@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=VT323&display=swap");
+
+* {
+  font-family: "Poppins";
+}
+body {
+  background: #222;
+  text-align: center;
+}
+form {
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+}
+input {
+  padding: 5px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 50px;
+  font-size: 1.4em;
+  margin: 10px auto;
+}
+form img {
+  width: 200px;
+  margin: 0 auto;
+}
+form img.open {
+  display: block;
+}
+form img.closed {
+  display: none;
+}
+
+form:has(input[type="password"]:valid:focus) img.closed{
+ /* background-color: red; */
+ display: block;
+}
+form:has(input[type="password"]:valid:focus) img.open{
+ /* background-color: red; */
+ display: none;
+}
